@@ -87,16 +87,40 @@
     </section>
 
     <section class="experience">
-      <!--TODO: Сделать после первичной проверки-->
+      <h2 class="experience__title">Живой пример</h2>
+      <p class="experience__text">
+        Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм
+        на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+        При этом он&nbsp;не&nbsp;менял своих привычек и&nbsp;по-прежнему
+        спит по&nbsp;16&nbsp;часов в&nbsp;день.
+      </p>
+      <dl class="experience__result result">
+        <dt class="result__title">5 кг</dt>
+        <dd class="result__text">снижение веса</dd>
+        <dt class="result__title">60 дней</dt>
+        <dd class="result__text">затрачено дней</dd>
+      </dl>
+      <p class="experience__price-text">Затраты на питание: 15 000 руб.</p>
+      <img class="experience__image" src="http://placehold.it/150x100" alt="Кот до нашей диеты">
+      <img class="experience__image" src="http://placehold.it/150x100" alt="Кот после нашей диеты">
+      <div class="experience__switch-wrapper">
+        <span class="experience__switch">Было</span>
+        <span class="experience__switch">Стало</span>
+      </div>
     </section>
 
     <section class="contacts">
-      <!--TODO: Сделать после первичной проверки-->
+      <h2 class="visually-hidden">Наши контактные данные</h2>
+      <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__map map">
+        <!--TODO: Здесь могла бы быть ваша интерактивная карта-->
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo">
+    <a class="page-footer__logo" href="#">
       <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Логотип CAT ENERGY">
     </a>
     <ul class="page-footer__list socials">
@@ -110,15 +134,12 @@
         <a class="socials__link socials__link--fb" href="#">Мы в facebook</a>
       </li>
     </ul>
-    <ul class="page-footer__list academy-link">
-      <li class="academy-link__item">
-        <a class="academy-link__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </li>
-      <li class="academy-link__item">
-        <a class="academy-link__logo" href="https://htmlacademy.ru/intensive/adaptive">Логотип с ссылкой на HTML
-          Academy</a>
-      </li>
-    </ul>
+    <div class="page-footer__list academy-link">
+      <a class="academy-link__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span>HTML Academy</span>
+        <svg class="academy-link__logo"></svg>
+      </a>
+    </div>
   </footer>
 
 </body>
