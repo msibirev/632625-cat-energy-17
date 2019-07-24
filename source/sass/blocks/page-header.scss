@@ -1,0 +1,13 @@
+.page-header__logo {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

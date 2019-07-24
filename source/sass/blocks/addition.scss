@@ -1,0 +1,24 @@
+.addition {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.addition__title {
+  font-family: $Oswald;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #222222;
+}
+
+.addition__description {
+  font-size: 14px;
+  line-height: 1;
+  color: #444444;
+}
+
+.addition__description dd {
+  margin: 0;
+}

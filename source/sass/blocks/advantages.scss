@@ -1,0 +1,39 @@
+.advantages {
+  list-style: none;
+  padding: 0;
+}
+
+.advantages__item {
+  padding-bottom: 20px;
+}
+
+.advantages__image {
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--leaf {
+    background-image: url(../../img/advantage-leaf@1x.png);
+  }
+
+  &--powder {
+    background-image: url(../../img/advantage-powder@1x.png);
+  }
+
+  &--dining {
+    background-image: url(../../img/advantage-dining@1x.png);
+  }
+
+  &--clock {
+    background-image: url(../../img/advantage-clock@1x.png);
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #444444;
+}

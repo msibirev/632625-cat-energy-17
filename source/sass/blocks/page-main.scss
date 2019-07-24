@@ -1,0 +1,44 @@
+.page-main__wrapper {
+  position: relative;
+  background: url("../../img/index-background-mobile@1x.jpg");
+  background-color: #68b738;
+  background-repeat: no-repeat;
+}
+
+.page-main__title {
+  text-align: center;
+  margin: 0;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  color: #ffffff;
+  padding-top: 29px;
+}
+
+.page-main__catalog-title,
+.page-main__program-title {
+  text-align: center;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.67;
+  color: #111111;
+  padding-top: 31px;
+}
+
+.page-main__sub-title {
+  margin: 0;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #ffffff;
+  padding-top: 19px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-main__image {
+  position: absolute;
+}

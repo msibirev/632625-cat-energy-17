@@ -1,0 +1,40 @@
+.site-list {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.site-list__item {
+  font-family: $Oswald;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  padding-bottom: 24px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #111111;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+      transition: 0.3s;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.site-list__item--active a {
+  border-bottom: 2px solid #68b738;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
