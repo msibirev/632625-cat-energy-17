@@ -1,0 +1,59 @@
+.goods {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.goods__container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.goods__picture {
+  text-decoration: none;
+}
+
+.goods__title {
+  margin: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: $Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #111111;
+}
+.goods__composition {
+  font-size: 12px;
+  line-height: 1.33;
+  color: #444444;
+}
+
+.goods__composition dd {
+  margin: inherit;
+}
+
+.goods__more-title {
+  font-family: $Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.25;
+  color: #111111;
+  text-align: center;
+}
+
+.goods__sub-title {
+  font-size: 12px;
+  line-height: 1.33;
+  color: #444444;
+  text-align: center;
+}
+
+.goods__more-button {
+  background-color: #f2f2f2;
+  color: #444444;
+}

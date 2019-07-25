@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  width: 280px;
+  padding: 10px 15px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

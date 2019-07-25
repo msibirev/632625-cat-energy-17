@@ -1,0 +1,21 @@
+.academy-link__copyright {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1;
+  color: #444444;
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+}
+
+.academy-link__logo {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: #68b738;
+    transition: 0.3s;
+  }
+}
