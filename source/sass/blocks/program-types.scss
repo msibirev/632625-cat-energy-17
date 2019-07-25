@@ -19,7 +19,9 @@
   height: 51px;
   background-color: #68b738;
   border-radius: 50%;
+}
 
+.program-types__icon {
   &--slim {
     position: absolute;
     top: -1px;
@@ -92,7 +94,7 @@
     right: -35px;
     width: 24px;
     height: 11px;
-    background-image: url(../../img/icon-right-arrow-long.svg);
+    background-image: url("../img/icon-right-arrow-long.svg");
   }
 
   &:hover,
@@ -103,7 +105,7 @@
       width: 32px;
       height: 11px;
       right: -43px;
-      background-image: url(../../img/icon-right-arrow-verylong.svg);
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
   }
 

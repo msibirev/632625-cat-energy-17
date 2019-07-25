@@ -1,3 +1,11 @@
+.additional-goods__container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .additional-goods__title {
   font-family: $Oswald;
   font-weight: 400;
@@ -7,7 +15,7 @@
 }
 
 .additional-goods__gift {
-  background-image: url(../../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   padding-top: 65px;
   padding-bottom: 43px;

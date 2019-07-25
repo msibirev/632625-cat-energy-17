@@ -1,8 +1,16 @@
 .page-main__wrapper {
   position: relative;
-  background: url("../../img/index-background-mobile@1x.jpg");
+  background: url("../img/index-background-mobile@1x.jpg");
   background-color: #68b738;
   background-repeat: no-repeat;
+}
+
+.page-main__container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .page-main__title {
