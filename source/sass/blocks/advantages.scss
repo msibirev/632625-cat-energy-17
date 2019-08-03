@@ -65,3 +65,19 @@
   line-height: 1.29;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    width: 245px;
+  }
+}

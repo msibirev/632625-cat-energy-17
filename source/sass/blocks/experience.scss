@@ -4,11 +4,11 @@
 }
 
 .experience__container {
+  display: flex;
+  flex-direction: column;
   width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .experience__title {
@@ -44,6 +44,10 @@
   color: #111111;
 }
 
+.experience__image--after {
+  display: none;
+}
+
 .experience__switch {
   font-family: $Oswald;
   font-weight: 400;
@@ -51,4 +55,50 @@
   line-height: 1.25;
   color: #111111;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .experience__container {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .experience__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .experience__result {
+    margin: 0;
+  }
+
+  .experience__price-text {
+    width: 136px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .experience__container {
+    width: 1300px;
+    padding: 0 40px;
+  }
+
+  .experience__title {
+    margin: 0;
+  }
+
+  .experience__text {
+    width: 380px;
+    margin: 0;
+  }
+
+  .experience__wrapper {
+    flex-direction: column;
+  }
+
+  .experience__price-text {
+    width: 350px;
+    text-align: left;
+  }
 }

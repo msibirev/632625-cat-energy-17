@@ -1,9 +1,10 @@
 .result {
-  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .result__wrapper {
-  display: inline-block;
+  width: 124px;
   border: solid 1px #cdcdcd;
   border-radius: 3px;
 }
@@ -24,4 +25,10 @@
   line-height: 1;
   text-align: center;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .result {
+    width: 365px;
+  }
 }
