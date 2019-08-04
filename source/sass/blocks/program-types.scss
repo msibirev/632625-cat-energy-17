@@ -113,3 +113,14 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .program-types {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-types__item {
+    width: 570px;
+  }
+}

@@ -1,12 +1,14 @@
 .contacts__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .contacts__title {
+  width: 145px;
   font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
@@ -16,7 +18,26 @@
 }
 
 .contacts__address {
+  width: 135px;
   font-size: 14px;
   line-height: 1.43;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__container {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .contacts__address {
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__container {
+    width: 1300px;
+    padding: 0 40px;
+  }
 }

@@ -57,3 +57,28 @@
   background-color: #f2f2f2;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .goods__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .goods__item {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods__container {
+    width: 1300px;
+    padding: 0 40px;
+  }
+
+  .goods__item {
+    width: 245px;
+  }
+}

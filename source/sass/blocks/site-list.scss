@@ -38,3 +38,10 @@
     opacity: 1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    margin: 0;
+  }
+}
