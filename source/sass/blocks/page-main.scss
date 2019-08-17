@@ -33,6 +33,10 @@
   padding-top: 31px;
 }
 
+.page-main__program-title {
+  text-align: left;
+}
+
 .page-main__sub-title {
   margin: 0;
   font-family: $Oswald;
@@ -41,24 +45,72 @@
   line-height: 1;
   color: #ffffff;
   padding-top: 19px;
+  padding-bottom: 172px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .page-main__image {
+  z-index: 1;
   position: absolute;
+  top: 170px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__container {
-    width: 708px;
+    width: 768px;
     padding: 0 30px;
+  }
+
+  .page-main__wrapper {
+    background: none;
+  }
+
+  .page-main__title {
+    width: 415px;
+    font-size: 60px;
+    line-height: 1;
+    text-align: left;
+    color: #111111;
+  }
+
+  .page-main__sub-title {
+    font-size: 20px;
+    color: #111111;
+    text-align: left;
+    padding-bottom: 48px;
+  }
+
+  .page-main__image {
+    z-index: -1;
+  }
+
+  .page-main__catalog-title {
+    text-align: left;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 156px;
+  }
+
+  .page-main__program-title {
+    font-size: 60px;
+    line-height: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__container {
     width: 1300px;
+    padding: 0 40px;
+  }
+
+  .page-main__catalog-title {
+    width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 156px;
     padding: 0 40px;
   }
 }

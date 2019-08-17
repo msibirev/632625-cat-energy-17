@@ -1,7 +1,51 @@
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+  display: block;
+}
+
 .checkbox__name {
   font-family: $Oswald;
   font-size: 16px;
   line-height: 1.13;
   color: #222222;
   text-transform: uppercase;
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox {
+    width: 50%;
+  }
+
+  .checkbox__name {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    width: 245px;
+  }
 }

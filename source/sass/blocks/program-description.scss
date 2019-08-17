@@ -15,8 +15,17 @@
 
 @media (min-width: $tablet-width) {
   .program-description__container {
-    width: 708px;
+    width: 768px;
     padding: 0 30px;
+  }
+
+  .program-description__button {
+    width: 245px;
+    margin-top: 0;
+    margin-bottom: 529px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 16px 15px;
   }
 }
 

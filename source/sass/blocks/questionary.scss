@@ -15,8 +15,15 @@
 
 @media (min-width: $tablet-width) {
   .questionary__container {
-    width: 780px;
+    width: 768px;
     padding: 0 30px;
+  }
+
+  .questionary__description {
+    width: 345px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
 

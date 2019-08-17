@@ -1,10 +1,33 @@
 .socials {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
   width: 125px;
   list-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    right: 0;
+    bottom: -10px;
+    height: 1px;
+    background-color: #d9d9d9;
+    width: 280px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -80px;
+    right: 0;
+    bottom: 38px;
+    height: 1px;
+    background-color: #d9d9d9;
+    width: 280px;
+  }
 }
 
 .socials__item {
@@ -22,6 +45,50 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--vk svg {
+    width: 22px;
+    height: 17px;
+  }
+
+  &--inst svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  &--fb svg {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .socials__link {
+    &--vk svg {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--inst svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb svg {
+      width: 14px;
+      height: 28px;
+    }
   }
 }
 
