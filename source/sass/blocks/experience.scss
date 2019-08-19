@@ -93,6 +93,15 @@
     text-align: right;
   }
 
+  .experience__pic-wrapper {
+    margin: 0 auto;
+  }
+
+  .experience__switch-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .experience__switch {
     font-size: 20px;
     line-height: 1;
@@ -102,8 +111,17 @@
 
 @media (min-width: $desktop-width) {
   .experience__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 1300px;
     padding: 0 40px;
+  }
+
+  .experience__info-wrapper,
+  .experience__pic-wrapper {
+    width: 570px;
   }
 
   .experience__title {

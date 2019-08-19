@@ -50,6 +50,11 @@
   text-transform: uppercase;
 }
 
+.page-main__button {
+  margin-top: 135px;
+  margin-bottom: 22px;
+}
+
 .page-main__image {
   z-index: 1;
   position: absolute;
@@ -59,6 +64,7 @@
 @media (min-width: $tablet-width) {
   .page-main__container {
     width: 768px;
+    min-height: 696px;
     padding: 0 30px;
   }
 
@@ -79,6 +85,14 @@
     color: #111111;
     text-align: left;
     padding-bottom: 48px;
+  }
+
+  .page-main__button {
+    width: 245px;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 1;
+    padding: 16px 15px;
   }
 
   .page-main__image {
