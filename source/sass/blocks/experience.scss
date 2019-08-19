@@ -58,9 +58,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .experience {
+    background-color: #ffffff;
+  }
+
   .experience__container {
-    width: 708px;
+    width: 768px;
     padding: 0 30px;
+  }
+
+  .experience__title {
+    margin: 0;
+    font-size: 60px;
+    line-height: 1;
+  }
+  .experience__text {
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .experience__wrapper {
@@ -73,15 +87,41 @@
   }
 
   .experience__price-text {
-    width: 136px;
+    font-size: 20px;
+    line-height: 1;
+    width: 175px;
     text-align: right;
+  }
+
+  .experience__pic-wrapper {
+    margin: 0 auto;
+  }
+
+  .experience__switch-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .experience__switch {
+    font-size: 20px;
+    line-height: 1;
+    border-bottom: 1px dotted #bebebe;
   }
 }
 
 @media (min-width: $desktop-width) {
   .experience__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 1300px;
     padding: 0 40px;
+  }
+
+  .experience__info-wrapper,
+  .experience__pic-wrapper {
+    width: 570px;
   }
 
   .experience__title {

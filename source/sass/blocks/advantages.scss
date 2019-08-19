@@ -70,9 +70,26 @@
   .advantages {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .advantages__item {
     width: 324px;
+    min-height: 228px;
+
+    &::before {
+      position: relative;
+      display: block;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .advantages__text {
+    width: 245px;
+    padding-top: 37px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
