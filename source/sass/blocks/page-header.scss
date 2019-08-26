@@ -11,6 +11,7 @@
   display: block;
   width: 190px;
   cursor: pointer;
+  padding-top: 12px;
 
   &:hover,
   &:focus {
@@ -23,10 +24,16 @@
   }
 }
 
+.page-header__logo-image {
+  width: 191px;
+  height: 39px;
+}
+
 .page-header__toggle {
   position: relative;
   display: inline-block;
   width: 25px;
+  margin-top: 8px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -69,6 +76,11 @@
     padding: 0 30px;
   }
 
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
+
   .page-header__toggle {
     display: none;
   }
@@ -98,5 +110,10 @@
   .page-header__container {
     width: 1300px;
     padding: 0 40px;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }
