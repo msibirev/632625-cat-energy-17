@@ -1,8 +1,11 @@
 .page-main__wrapper {
   position: relative;
+  width: 320px;
+  left: -20px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px 305px;
+  background-color: #68b738;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -23,7 +26,7 @@
   font-size: 36px;
   line-height: 1;
   color: #ffffff;
-  padding-top: 29px;
+  padding-top: 27px;
 }
 
 .page-main__catalog-title,
@@ -34,11 +37,15 @@
   font-size: 36px;
   line-height: 1.67;
   color: #111111;
-  padding-top: 31px;
+  padding-top: 2px;
+  margin-right: 23px;
+  margin-bottom: 30px;
 }
 
 .page-main__program-title {
   text-align: left;
+  margin-right: 0;
+  margin-bottom: 24px;
 }
 
 .page-main__sub-title {
@@ -48,8 +55,8 @@
   font-size: 14px;
   line-height: 1;
   color: #ffffff;
-  padding-top: 19px;
-  padding-bottom: 172px;
+  padding-top: 25px;
+  padding-bottom: 168px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -62,21 +69,28 @@
 .page-main__image {
   z-index: 1;
   position: absolute;
-  top: 170px;
+  top: 165px;
+  left: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__container {
     width: 768px;
-    min-height: 696px;
     padding: 0 30px;
+
+    &--index {
+      min-height: 815px
+    }
   }
 
   .page-main__wrapper {
     background: none;
+    left: 0;
+    margin-left: 88px;
   }
 
   .page-main__title {
+    padding-top: 38px;
     width: 415px;
     font-size: 60px;
     line-height: 1;
@@ -89,18 +103,13 @@
     color: #111111;
     text-align: left;
     padding-bottom: 48px;
-  }
-
-  .page-main__button {
-    width: 245px;
-    margin-top: 0;
-    font-size: 20px;
-    line-height: 1;
-    padding: 16px 15px;
+    padding-top: 41px;
   }
 
   .page-main__image {
     z-index: -1;
+    left: -88px;
+    top: 238px;
   }
 
   .page-main__catalog-title {
@@ -110,12 +119,16 @@
     padding: 0 30px;
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 156px;
+    margin-top: 48px;
+    margin-bottom: 9px;
   }
 
   .page-main__program-title {
     font-size: 60px;
     line-height: 1;
+    margin-top: 0;
+    margin-bottom: 56px;
+    padding-top: 38px;
   }
 }
 
@@ -123,12 +136,36 @@
   .page-main__container {
     width: 1300px;
     padding: 0 40px;
+
+    &--index {
+      min-height: 565px;
+    }
   }
+
+  .page-main__wrapper {
+    margin-left: 80px;
+  }
+
+  .page-main__title {
+    padding-top: 90px;
+  }
+
+  .page-main__image {
+    z-index: 1;
+    left: 370px;
+    top: 10px;
+  }
+
 
   .page-main__catalog-title {
     width: 1300px;
     margin: 0 auto;
-    margin-bottom: 156px;
+    margin-top: 65px;
+    margin-bottom: 10px;
     padding: 0 40px;
+  }
+
+  .page-main__program-title {
+    padding-top: 55px;
   }
 }

@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 11px;
   padding: 0 20px;
 }
 
@@ -76,6 +77,10 @@
     padding: 0 30px;
   }
 
+  .page-header__logo {
+    padding-top: 23px;
+  }
+
   .page-header__logo-image {
     width: 174px;
     height: 59px;
@@ -110,6 +115,7 @@
   .page-header__container {
     width: 1300px;
     padding: 0 40px;
+    margin-top: 30px;
   }
 
   .page-header__logo-image {

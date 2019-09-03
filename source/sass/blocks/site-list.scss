@@ -31,6 +31,7 @@
 
 .site-list__item--active a {
   border-bottom: 2px solid #68b738;
+  padding-bottom: 6px;
 
   &:hover,
   &:focus,
@@ -43,7 +44,7 @@
   .site-list {
     display: flex;
     justify-content: space-between;
-    padding-top: 47px;
+    padding-top: 42px;
     margin: 0;
   }
 
@@ -55,5 +56,20 @@
     a {
       color: #222222;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .site-list__item--alt a {
+      color: #ffffff;
+  }
+
+  .site-list__item--alt-active a {
+    border-bottom: 2px solid #ffffff;
   }
 }

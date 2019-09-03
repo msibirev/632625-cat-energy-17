@@ -87,7 +87,7 @@
           </li>
 
           <li class="goods__item">
-            <a class="goods__picture" href="#">
+            <a class="goods__picture goods__picture--big" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)"
                   srcset="./img/webp/chicken-big-desktop@1x.webp 1x, ./img/webp/chicken-big-desktop@2x.webp 2x">
@@ -163,7 +163,7 @@
           </li>
 
           <li class="goods__item">
-            <a class="goods__picture" href="#">
+            <a class="goods__picture goods__picture--big" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)"
                   srcset="./img/webp/fish-big-desktop@1x.webp 1x, ./img/webp/fish-big-desktop@2x.webp 2x">
@@ -239,7 +239,7 @@
           </li>
 
           <li class="goods__item">
-            <a class="goods__picture" href="#">
+            <a class="goods__picture goods__picture--big" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)"
                   srcset="./img/webp/buckwheat-big-desktop@1x.webp 1x, ./img/webp/buckwheat-big-desktop@2x.webp 2x">
@@ -327,70 +327,73 @@
       <div class="additional-goods__container">
         <h2 class="additional-goods__title">Дополнительные товары</h2>
       </div>
-      <ul class="additional-goods__list addition">
-        <div class="addition__container">
-          <li class="addition__item">
-            <p class="addition__title">Сахарозаменитель</p>
-            <table class="addition__description">
-              <tr>
-                <td>1 упаковка (100 г)</dt>
-                <td>200 Р.</dd>
-              </tr>
-            </table>
-            <button class="button addition__button">Заказать</button>
-          </li>
-          <li class="addition__item">
-            <p class="addition__title">Питьевая вода</p>
-            <table class="addition__description">
-              <tr>
-                <td>5 литров</dt>
-                <td>50 Р.</dd>
-              </tr>
-            </table>
-            <button class="button addition__button">Заказать</button>
-          </li>
-          <li class="addition__item">
-            <p class="addition__title">Молоко</p>
-            <table class="addition__description">
-              <tr>
-                <td>1 литр</dt>
-                <td>100 Р.</dd>
-              </tr>
-            </table>
-            <button class="button addition__button">Заказать</button>
-          </li>
-          <li class="addition__item">
-            <p class="addition__title">Витамины</p>
-            <table class="addition__description">
-              <tr>
-                <td>1 упаковка (300 г)</dt>
-                <td>300 Р.</dd>
-              </tr>
-            </table>
-            <button class="button addition__button">Заказать</button>
-          </li>
-        </div>
-      </ul>
-      <div class="additional-goods__container">
-        <div class="additional-goods__gift">
-          <svg class="additional-goods__picture" width="56" height="61" x="0px" y="0px" viewBox="0 0 55.5 60">
-            <use xlink:href="img/sprite.svg#gift-icon"></use>
-          </svg>
-          <p class="additional-goods__gift-title">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="additional-goods__horizontal-wrapper">
+        <ul class="additional-goods__list addition">
+          <div class="addition__container addition__container--main-alt">
+            <li class="addition__item">
+              <p class="addition__title">Сахарозаменитель</p>
+              <table class="addition__description">
+                <tr>
+                  <td>1 упаковка (100 г)</dt>
+                  <td>200 Р.</dd>
+                </tr>
+              </table>
+              <button class="button addition__button">Заказать</button>
+            </li>
+            <li class="addition__item">
+              <p class="addition__title">Питьевая вода</p>
+              <table class="addition__description">
+                <tr>
+                  <td>5 литров</dt>
+                  <td>50 Р.</dd>
+                </tr>
+              </table>
+              <button class="button addition__button">Заказать</button>
+            </li>
+            <li class="addition__item">
+              <p class="addition__title">Молоко</p>
+              <table class="addition__description">
+                <tr>
+                  <td>1 литр</dt>
+                  <td>100 Р.</dd>
+                </tr>
+              </table>
+              <button class="button addition__button">Заказать</button>
+            </li>
+            <li class="addition__item">
+              <p class="addition__title">Витамины</p>
+              <table class="addition__description">
+                <tr>
+                  <td>1 упаковка (300 г)</dt>
+                  <td>300 Р.</dd>
+                </tr>
+              </table>
+              <button class="button addition__button">Заказать</button>
+            </li>
+          </div>
+        </ul>
+        <div class="additional-goods__container additional-goods__container--second-alt">
+          <div class="additional-goods__gift">
+            <svg class="additional-goods__picture" width="56" height="61" x="0px" y="0px" viewBox="0 0 55.5 60">
+              <use xlink:href="img/sprite.svg#gift-icon"></use>
+            </svg>
+            <p class="additional-goods__gift-title">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="contacts contacts--alt">
-      <div class="contacts__container">
+      <div class="contacts__container contacts__container--alt">
         <h2 class="visually-hidden">Наши контактные данные</h2>
-        <p class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        <p class="contacts__title contacts__title--alt">Приглашаем<br> к сотрудничеству дилеров!</p>
+        <p class="contacts__address contacts__address--alt">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
+        </p>
       </div>
       <div class="contacts__map map">
-        <iframe
+        <iframe class="map__image"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533282!2d30.32085871608576!3d59.93871648187613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1566214896439!5m2!1sru!2sru"
-          width="100%" height="400" frameborder="0" style="border:0" allowfullscreen>
+          frameborder="0" style="border:0" allowfullscreen>
         </iframe>
       </div>
     </section>
@@ -429,7 +432,7 @@
       <div class="page-footer__list academy-link">
         <a class="academy-link__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span>HTML Academy</span>
-          <svg class="academy-link__logo" width="34" height="34" viewBox="0 0 60 60">
+          <svg class="academy-link__logo" width="40" height="40" viewBox="0 0 60 60">
             <use xlink:href="img/sprite.svg#academy-icon"></use>
           </svg>
         </a>

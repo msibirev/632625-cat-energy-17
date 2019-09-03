@@ -14,8 +14,8 @@
 }
 
 .how-to__list {
-  margin-top: 35px;
-  margin-bottom: 42px;
+  margin-top: 26px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,8 +25,14 @@
   }
 
   .how-to__title {
+    padding-top: 14px;
     font-size: 60px;
     line-height: 1;
+  }
+
+  .how-to__list {
+    margin-bottom: 0;
+    margin-top: 72px;
   }
 }
 
@@ -34,6 +40,10 @@
   .how-to__container {
     width: 1300px;
     padding: 0 40px;
+  }
+
+  .how-to__title {
+    padding-top: 41px;
   }
 
   .how-to__list {
