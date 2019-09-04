@@ -1,6 +1,38 @@
 .main-nav {
-  display: none;
+  position: relative;
   z-index: 1;
+}
+
+.main-nav--no-js .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav:not(.main-nav--closed) .main-nav__toggle--burger {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle--cross {
+  display: none;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  left: -24px;
+  display: inline-block;
+  margin-top: 22px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  &--cross {
+    top: -54px;
+    left: 265px;
+  }
 }
 
 .main-nav__wrapper {
@@ -14,6 +46,14 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     display: block;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__wrapper {

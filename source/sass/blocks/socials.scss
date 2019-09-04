@@ -80,6 +80,16 @@
     }
   }
 
+  .socials__item {
+    &--vk {
+      padding-top: 13px;
+    }
+
+    &--fb {
+      padding-top: 7px;
+    }
+  }
+
   .socials__link {
     &--vk svg {
       width: 30px;

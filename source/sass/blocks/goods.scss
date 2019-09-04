@@ -46,6 +46,7 @@
   line-height: 1.25;
   color: #111111;
 }
+
 .goods__composition {
   width: 140px;
   padding: 0;
@@ -84,7 +85,7 @@
 
 .goods__button {
   position: relative;
-    top: -5px;
+  top: -5px;
   font-size: 16px;
 }
 
@@ -128,12 +129,13 @@
 
   .goods__item {
     position: relative;
+    min-height: 431px;
     padding-top: 145px;
     background-color: #f2f2f2;
     flex-direction: column;
     align-items: center;
     width: 324px;
-    margin-top: 156px;
+    margin-bottom: 140px;
 
     &::after {
       display: none;
@@ -143,6 +145,10 @@
       padding-top: 0;
       background-color: #ffffff;
       border: 1px solid #cdcdcd;
+    }
+
+    &--last {
+      margin-bottom: 68px;
     }
   }
 
@@ -215,6 +221,7 @@
 
   .goods__item {
     width: 245px;
+    margin-bottom: 142px;
   }
 
   .goods__composition {

@@ -31,8 +31,19 @@
   }
 
   .how-to__list {
+    position: relative;
     margin-bottom: 0;
     margin-top: 72px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 22px;
+      left: -20px;
+      width: 768px;
+      height: 1px;
+      background-color: #eaeaea;
+    }
   }
 }
 
@@ -48,5 +59,9 @@
 
   .how-to__list {
     justify-content: space-between;
+
+    &::before {
+      display: none;
+    }
   }
 }

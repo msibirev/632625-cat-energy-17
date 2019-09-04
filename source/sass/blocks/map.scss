@@ -3,12 +3,21 @@
 }
 
 .map__image {
+  border: none;
   width: 100%;
   height: 362px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {
   .map__image {
     height: 396px;
+    background-image: url("../img/bg-map-tablet@1x.png");
   }
+}
+
+@media (min-width: $desktop-width) {
+  background-image: url("../img/bg-map-desktop@1x.png");
 }

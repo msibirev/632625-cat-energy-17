@@ -21,11 +21,35 @@
 }
 
 .form__set-title {
+  display: inline-block;
+  background-color: #ffffff;
+  position: relative;
   font-family: $Oswald;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   color: #111111;
+  padding-right: 23px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 20px;
+    width: 100vw;
+    height: 3px;
+    margin-top: 1px;
+    background-color: #68b738;
+  }
+
+  &--contacts {
+    &::after {
+      z-index: 1;
+      top: 26%;
+      left: 201px;
+    }
+  }
 }
 
 .form__field {
@@ -110,6 +134,30 @@
 
   .form__set-title {
     font-size: 36px;
+    padding-right: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: -95px;
+      width: 55px;
+      height: 3px;
+      margin-top: 4px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      margin-top: 4px;
+    }
+
+    &--contacts {
+      &::after {
+        top: 50%;
+        left: 553px;
+      }
+    }
   }
 
   .form__checkbox-wrapper {
