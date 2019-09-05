@@ -13,8 +13,8 @@
 
 .program-types__image {
   position: absolute;
-  top: 32px;
-  left: 20px;
+  top: 24px;
+  left: 22px;
   width: 50px;
   height: 51px;
   background-color: #68b738;
@@ -48,8 +48,8 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 39px;
-  padding-left: 72px;
+  padding-top: 30px;
+  padding-left: 71px;
 }
 
 .program-types__text {
@@ -58,13 +58,13 @@
   line-height: 1.29;
   color: #444444;
   margin: 0;
-  padding-top: 36px;
+  padding-top: 28px;
 
   &::after {
     content: "";
     position: absolute;
     left: 0;
-    top: 148px;
+    top: 140px;
     width: 240px;
     height: 1px;
     background-color: #333333;
@@ -121,6 +121,8 @@
 @media (min-width: $tablet-width) {
   .program-types__item {
     width: 708px;
+    margin-bottom: 32px;
+    padding-left: 53px;
   }
 
   .program-types__image {
@@ -141,7 +143,7 @@
 
     &--pro {
       position: absolute;
-      bottom: 40px;
+      bottom: 44px;
       left: -35px;
       width: 268px;
       height: 113px;
@@ -150,7 +152,7 @@
 
   .program-types__title {
     padding-left: 0;
-    padding-top: 81px;
+    padding-top: 78px;
     font-size: 36px;
     line-height: 1.03;
   }
@@ -158,7 +160,12 @@
   .program-types__text {
     width: 384px;
     font-size: 16px;
+    padding-top: 24px;
     line-height: 1.5;
+
+    &--break {
+      width: 344px;
+    }
 
     &::after {
       display: none;
@@ -167,10 +174,12 @@
 
   .program-types__link {
     font-size: 20px;
-    padding-bottom: 62px;
+    padding-bottom: 60px;
+    padding-top: 56px;
 
     &::after {
       bottom: 64px;
+      right: -48px;
     }
   }
 }
@@ -202,7 +211,7 @@
     }
 
     &--pro {
-      bottom: 16px;
+      bottom: 21px;
       left: -18px;
       width: 134px;
       height: 57px;
@@ -211,5 +220,27 @@
 
   .program-types__title {
     text-align: center;
+
+    &--slim {
+      padding-left: 20px;
+    }
+
+    &--pro {
+      padding-left: 62px;
+    }
+  }
+
+  .program-types__text {
+    padding-top: 72px;
+    width: 462px;
+
+    &--break {
+      width: 462px;
+    }
+  }
+
+  .program-types__link {
+    padding-bottom: 61px;
+    padding-top: 31px;
   }
 }

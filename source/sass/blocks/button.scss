@@ -24,3 +24,25 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--index {
+      width: 245px;
+      margin-top: 0;
+      font-size: 20px;
+      line-height: 1;
+      padding: 16px 15px;
+      margin-left: 88px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--index {
+      margin-left: 80px;
+      margin-top: 4px;
+    }
+  }
+}

@@ -1,3 +1,9 @@
 .copyright span {
   padding-top: 9px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright span {
+    padding-top: 3px;
+  }
+}

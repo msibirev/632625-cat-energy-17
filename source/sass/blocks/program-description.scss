@@ -6,6 +6,7 @@
 
 .program-description__list {
   margin: 0;
+  margin-top: 2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,11 +14,19 @@
     width: 768px;
     padding: 0 30px;
   }
+
+  .program-description__list {
+    margin-top: 32px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .program-description__container {
     width: 1300px;
     padding: 0 40px;
+  }
+
+  .program-description__list {
+    margin-top: 79px;
   }
 }
