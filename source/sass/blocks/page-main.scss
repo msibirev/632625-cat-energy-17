@@ -31,6 +31,7 @@
 
 .page-main__catalog-title,
 .page-main__program-title {
+  position: relative;
   text-align: center;
   font-family: $Oswald;
   font-weight: 400;
@@ -40,6 +41,10 @@
   padding-top: 2px;
   margin-right: 23px;
   margin-bottom: 30px;
+}
+
+.page-main__catalog-title {
+  margin-right: 6px;
 }
 
 .page-main__program-title {

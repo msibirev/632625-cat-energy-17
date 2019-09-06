@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preload" href="css/style.min.css" as="style" />
+    <link rel="preload" href="js/menu.js" as="script" />
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" />
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body>
@@ -13,8 +18,14 @@
       <div class="page-header__container">
         <a class="page-header__logo">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" />
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
+            <source
+              media="(min-width: 1300px)"
+              srcset="img/logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/logo-tablet.svg"
+            />
             <img
               class="page-header__logo-image"
               src="img/logo-mobile.svg"
@@ -28,7 +39,13 @@
             type="button"
             aria-label="Открыть меню"
           >
-            <svg width="25" height="19" x="0px" y="0px" viewBox="0 0 24 18">
+            <svg
+              width="25"
+              height="19"
+              x="0px"
+              y="0px"
+              viewBox="0 0 24 18"
+            >
               <use xlink:href="img/sprite.svg#burger-icon"></use>
             </svg>
           </button>
@@ -37,7 +54,13 @@
             type="button"
             aria-label="Закрыть меню"
           >
-            <svg width="19" height="19" x="0px" y="0px" viewBox="0 0 18 18">
+            <svg
+              width="19"
+              height="19"
+              x="0px"
+              y="0px"
+              viewBox="0 0 18 18"
+            >
               <use xlink:href="img/sprite.svg#close-icon"></use>
             </svg>
           </button>
@@ -121,16 +144,16 @@
           <h2 class="visually-hidden">Программы питания</h2>
           <ul class="program-description__list program-types">
             <li class="program-types__item">
-              <div class="program-types__image">
-                <svg
-                  class="program-types__icon program-types__icon--slim"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 70 97"
-                >
-                  <use xlink:href="img/sprite.svg#cat-slim"></use>
-                </svg>
-              </div>
+              <svg
+                class="program-types__icon program-types__icon--slim"
+                width="35"
+                height="49"
+                x="0px"
+                y="0px"
+                viewBox="0 0 70 97"
+              >
+                <use xlink:href="img/sprite.svg#cat-slim"></use>
+              </svg>
               <h3 class="program-types__title program-types__title--slim">
                 Похудение
               </h3>
@@ -142,16 +165,16 @@
               <a class="program-types__link" href="#">Каталог slim</a>
             </li>
             <li class="program-types__item">
-              <div class="program-types__image">
-                <svg
-                  class="program-types__icon program-types__icon--pro"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 134 56"
-                >
-                  <use xlink:href="img/sprite.svg#cat-pro"></use>
-                </svg>
-              </div>
+              <svg
+                class="program-types__icon program-types__icon--pro"
+                width="67"
+                height="28"
+                x="0px"
+                y="0px"
+                viewBox="0 0 134 56"
+              >
+                <use xlink:href="img/sprite.svg#cat-pro"></use>
+              </svg>
               <h3 class="program-types__title program-types__title--pro">
                 Набор массы
               </h3>
@@ -321,11 +344,11 @@
               </picture>
             </div>
             <div class="experience__switch-wrapper">
-              <span class="experience__switch">Было</span>
+              <button class="experience__switch" type="button">Было</button>
               <div class="experience__switch-toggle">
-                <div class="experience__switch-inner"></div>
+                <button class="experience__switch-inner" type="button" aria-label="Переключатель слайдера"></button>
               </div>
-              <span class="experience__switch">Стало</span>
+              <button class="experience__switch" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -371,7 +394,13 @@
               href="#"
               aria-label="Мы в VK"
             >
-              <svg x="0px" y="0px" viewBox="0 0 22 12">
+              <svg
+                width="22"
+                height="17"
+                x="0px"
+                y="0px"
+                viewBox="0 0 22 12"
+              >
                 <use xlink:href="img/sprite.svg#vk-icon"></use>
               </svg>
             </a>
@@ -382,7 +411,13 @@
               href="#"
               aria-label="Мы в Instagram"
             >
-              <svg x="0px" y="0px" viewBox="0 0 16.1 16">
+              <svg
+                width="17"
+                height="17"
+                x="0px"
+                y="0px"
+                viewBox="0 0 16.1 16"
+              >
                 <use xlink:href="img/sprite.svg#inst-icon"></use>
               </svg>
             </a>
@@ -393,7 +428,13 @@
               href="#"
               aria-label="Мы в facebook"
             >
-              <svg x="0px" y="0px" viewBox="0 0 10 19">
+              <svg
+                width="10"
+                height="19"
+                x="0px"
+                y="0px"
+                viewBox="0 0 10 19"
+              >
                 <use xlink:href="img/sprite.svg#fb-icon"></use>
               </svg>
             </a>

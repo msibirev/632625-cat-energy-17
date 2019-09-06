@@ -9,31 +9,32 @@
   background-color: #f2f2f2;
   padding-left: 20px;
   padding-right: 20px;
-}
 
-.program-types__image {
-  position: absolute;
-  top: 24px;
-  left: 22px;
-  width: 50px;
-  height: 51px;
-  background-color: #68b738;
-  border-radius: 50%;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 51px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
 }
 
 .program-types__icon {
   &--slim {
     position: absolute;
-    top: -1px;
-    left: 9px;
+    top: 21px;
+    left: 30px;
     width: 35px;
     height: 49px;
   }
 
   &--pro {
     position: absolute;
-    bottom: 12px;
-    left: -8px;
+    top: 34px;
+    left: 13px;
     width: 67px;
     height: 28px;
   }
@@ -112,10 +113,6 @@
       background-image: url("../img/icon-right-arrow-verylong.svg");
     }
   }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -123,28 +120,28 @@
     width: 708px;
     margin-bottom: 32px;
     padding-left: 53px;
-  }
 
-  .program-types__image {
-    top: 92px;
-    left: 446px;
-    width: 200px;
-    height: 200px;
+    &::before {
+      top: 92px;
+      left: 446px;
+      width: 200px;
+      height: 200px;
+    }
   }
 
   .program-types__icon {
     &--slim {
       position: absolute;
-      top: -12px;
-      left: 31px;
+      top: 81px;
+      left: 476px;
       width: 141px;
       height: 194px;
     }
 
     &--pro {
       position: absolute;
-      bottom: 44px;
-      left: -35px;
+      top: 134px;
+      left: 412px;
       width: 268px;
       height: 113px;
     }
@@ -187,32 +184,33 @@
 @media (min-width: $desktop-width) {
   .program-types {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .program-types__item {
     width: 570px;
     padding: 0 52px;
-  }
 
-  .program-types__image {
-    top: 47px;
-    left: 52px;
-    width: 100px;
-    height: 100px;
+    &::before {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   .program-types__icon {
     &--slim {
-      top: -6px;
-      left: 14px;
+      top: 41px;
+      left: 65px;
       width: 71px;
       height: 97px;
     }
 
     &--pro {
-      bottom: 21px;
-      left: -18px;
+      top: 68px;
+      left: 33px;
       width: 134px;
       height: 57px;
     }

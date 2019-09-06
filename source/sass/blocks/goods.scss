@@ -26,6 +26,20 @@
     background-color: #d9d9d9;
     width: 320px;
   }
+
+  &--line {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+  }
 }
 
 .goods__picture {
@@ -138,6 +152,10 @@
     margin-bottom: 140px;
 
     &::after {
+      display: none;
+    }
+
+    &--line::before {
       display: none;
     }
 

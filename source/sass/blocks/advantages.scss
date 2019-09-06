@@ -60,7 +60,7 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    &--leaf:before {
+    &--leaf::before {
       background-image: url("../img/advantage-left@2x.png");
     }
 
