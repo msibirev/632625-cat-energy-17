@@ -18,15 +18,14 @@
   text-align: center;
   color: #111111;
   text-transform: uppercase;
-  padding-top: 17px;
-  padding-bottom: 18px;
+  padding: 15px 0;
 }
 
 .result__text {
   position: absolute;
-  left: 18px;
-  top: 49px;
-  width: 87px;
+  left: 20px;
+  top: 45px;
+  width: 81px;
   margin: inherit;
   background-color: #f2f2f2;
   font-size: 12px;
@@ -40,12 +39,31 @@
     width: 365px;
   }
 
+  .result__wrapper {
+    width: 160px;
+  }
+
   .result__title {
     font-size: 30px;
     line-height: 1.23;
   }
 
   .result__text {
+    width: 128px;
     font-size: 14px;
+    left: 15px;
+    top: 64px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result__title {
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+
+  .result__text {
+    background-color: #f2f2f2;
   }
 }

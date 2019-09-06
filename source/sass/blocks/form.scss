@@ -1,6 +1,37 @@
 .form__set {
   width: 280px;
-  margin-bottom: 24px;
+  margin-bottom: 13px;
+
+  &--area {
+    margin-top: 29px;
+    margin-bottom: 30px;
+  }
+
+  &--line {
+    position: relative;
+    padding: 15px 0;
+    margin-bottom: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      width: 320px;
+      height: 1px;
+      background-color: #e6e6e6;
+    }
+  }
 }
 
 .form__set-row {
@@ -9,64 +40,173 @@
 }
 
 .form__set-title {
+  display: inline-block;
+  background-color: #ffffff;
+  position: relative;
   font-family: $Oswald;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   color: #111111;
+  padding-right: 23px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 20px;
+    width: 100vw;
+    height: 3px;
+    margin-top: 1px;
+    background-color: #68b738;
+  }
+
+  &--contacts {
+    &::after {
+      z-index: 1;
+      top: 26%;
+      left: 201px;
+    }
+  }
 }
 
 .form__field {
+  position: relative;
   display: block;
+
+  &--area {
+    padding-top: 31px;
+  }
 }
 
-.form__set--line {
-  padding: 15px 0;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+.form__login-wrapper {
+  padding-top: 28px;
+}
+
+.form__checkbox-wrapper {
+  margin-top: 27px;
+}
+
+.form__submit {
+  font-size: 16px;
+  margin-top: 17px;
+}
+
+.form__note {
+  font-size: 14px;
+  line-height: 1.14;
+  color: #444444;
+  text-align: center;
+  padding-top: 8px;
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
-  .form__set {
-    width: 708px;
-    margin-left: 40px;
+  .form__row-wrapper {
+    width: 631px;
   }
 
-  .form__set--line {
-    border-left: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6;
+  .form__login-wrapper {
+    width: 632px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 74px;
+  }
+
+  .form__field {
+    width: 100%;
+
+    &--area {
+      padding-top: 74px;
+    }
+  }
+
+  .form__set {
+    width: 631px;
+    margin-left: 40px;
+    margin-bottom: 53px;
+
+    &--line {
+      border: 1px solid #e6e6e6;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &--contacts {
+      margin-top: 20px;
+    }
+
+    &--area {
+      margin-top: -7px;
+      margin-bottom: 65px;
+    }
+
+    &--checkbox {
+      margin-bottom: 21px;
+    }
+
+    &--submit {
+      display: flex;
+      margin-bottom: 73px;
+    }
+  }
+
+  .form__set-title {
+    font-size: 36px;
+    padding-right: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: -95px;
+      width: 55px;
+      height: 3px;
+      margin-top: 4px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      margin-top: 4px;
+    }
+
+    &--contacts {
+      &::after {
+        top: 50%;
+        left: 553px;
+      }
+    }
   }
 
   .form__checkbox-wrapper {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .form__row-wrapper {
-    width: 570px;
-  }
-
-  .form__login-wrapper {
-    width: 570px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .form__field {
-    width: 100%;
-  }
-
-  .form__set-title {
-    font-size: 36px;
+    margin-top: 54px;
   }
 
   .form__submit {
+    margin-top: 0;
     margin-left: 40px;
     width: 283px;
+    min-height: 52px;
     font-size: 20px;
     line-height: 1;
+  }
+
+  .form__note {
+    font-size: 16px;
+    padding-top: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 62px;
   }
 }
 
@@ -78,6 +218,18 @@
   .form__set {
     width: 1220px;
     margin-left: 0;
+
+    &--contacts {
+      margin-top: 14px;
+    }
+
+    &--area {
+      margin-bottom: 69px;
+    }
+
+    &--submit {
+      margin-bottom: 83px;
+    }
   }
 
   .form__row-wrapper {
@@ -99,5 +251,16 @@
 
   .form__checkbox-wrapper {
     justify-content: space-between;
+  }
+
+  .form__submit {
+    width: 568px;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .form__note {
+    margin-top: 23px;
+    margin-left: 83px;
   }
 }

@@ -11,7 +11,7 @@
   line-height: 1.13;
   color: #222222;
   text-transform: uppercase;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .field__input {
@@ -22,23 +22,81 @@
   text-transform: uppercase;
   width: 100%;
   border: 1px solid #e6e6e6;
+  transition: 0.3s;
   padding: 13px 15px;
+
+  &--area {
+    resize: none;
+    min-height: 150px;
+    padding: 0;
+    padding-top: 13px;
+    padding-left: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid #444444;
+    outline: 1px solid #444444;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+  }
+}
+
+.field__icon {
+  position: absolute;
+  right: 15px;
+}
+
+.field__input:hover + .field__icon,
+.field__input:focus + .field__icon {
+  fill: #68b738;
+}
+
+.field__input:invalid + .field__icon {
+  fill: #ff8282;
 }
 
 @media (min-width: $tablet-width) {
+  .field {
+    margin-bottom: 20px;
+  }
+
   .field__name {
     font-size: 20px;
     line-height: 1;
+    margin-right: 20px;
   }
 
-  .field__input--area {
-    width: 570px;
+  .field__input {
+    font-size: 20px;
+    line-height: 1;
+    padding: 10px 17px;
+
+    &--area {
+      width: 631px;
+      min-height: 174px;
+      padding-top: 14px;
+    }
+  }
+
+  .field__icon {
+    right: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .field--last {
+    margin-bottom: 0;
+  }
+
   .field__input--area {
     width: 1220px;
   }
 }
-
